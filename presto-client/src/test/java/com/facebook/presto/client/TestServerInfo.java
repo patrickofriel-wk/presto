@@ -19,8 +19,8 @@ import org.testng.annotations.Test;
 
 import java.util.Optional;
 
-import static io.airlift.json.JsonCodec.jsonCodec;
 import static com.facebook.presto.client.NodeVersion.UNKNOWN;
+import static io.airlift.json.JsonCodec.jsonCodec;
 import static org.testng.Assert.assertEquals;
 
 public class TestServerInfo

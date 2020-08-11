@@ -80,6 +80,8 @@
         <air.test.jvmsize>4g</air.test.jvmsize>
 
         <air.javadoc.lint>-missing</air.javadoc.lint>
+
+        <project.build.targetJdk>1.8</project.build.targetJdk>
     </properties>
 
     <modules>
@@ -1794,6 +1796,22 @@
                         <exclusionPatterns>
                             <exclusionPattern>org/joda/time/.*</exclusionPattern>
                         </exclusionPatterns>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                    <configuration combine.self="override">
+                        <source>${project.build.targetJdk}</source>
+                        <target>${project.build.targetJdk}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <maxmem>${air.build.jvmsize}</maxmem>
+                        <failOnWarning>${air.compiler.fail-warnings}</failOnWarning>
+                        <showWarnings>true</showWarnings>
+                        <fork>true</fork>
+                        <parameters>true</parameters>
                     </configuration>
                 </plugin>
 

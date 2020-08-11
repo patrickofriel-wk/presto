@@ -13,10 +13,10 @@
  */
 package com.facebook.presto.functionNamespace.mysql;
 
-import io.airlift.configuration.AbstractConfigurationAwareModule;
 import com.google.inject.Binder;
 import com.google.inject.Injector;
 import com.google.inject.TypeLiteral;
+import io.airlift.configuration.AbstractConfigurationAwareModule;
 import org.jdbi.v3.core.ConnectionFactory;
 import org.jdbi.v3.core.Jdbi;
 import org.jdbi.v3.sqlobject.SqlObjectPlugin;

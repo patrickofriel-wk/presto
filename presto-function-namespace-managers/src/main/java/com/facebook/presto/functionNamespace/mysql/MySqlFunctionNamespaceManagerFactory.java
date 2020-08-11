@@ -13,12 +13,12 @@
  */
 package com.facebook.presto.functionNamespace.mysql;
 
-import io.airlift.bootstrap.Bootstrap;
 import com.facebook.presto.spi.function.FunctionHandleResolver;
 import com.facebook.presto.spi.function.FunctionNamespaceManager;
 import com.facebook.presto.spi.function.FunctionNamespaceManagerFactory;
 import com.facebook.presto.spi.function.SqlFunctionHandle;
 import com.google.inject.Injector;
+import io.airlift.bootstrap.Bootstrap;
 
 import java.util.Map;
 

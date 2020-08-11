@@ -13,7 +13,6 @@
  */
 package com.facebook.presto.thrift.api.connector;
 
-import io.airlift.stats.cardinality.HyperLogLog;
 import com.facebook.presto.common.Page;
 import com.facebook.presto.common.block.Block;
 import com.facebook.presto.common.block.BlockBuilder;
@@ -24,6 +23,7 @@ import com.facebook.presto.spi.InMemoryRecordSet;
 import com.facebook.presto.thrift.api.datatypes.PrestoThriftBlock;
 import com.google.common.collect.ImmutableList;
 import io.airlift.slice.Slice;
+import io.airlift.stats.cardinality.HyperLogLog;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

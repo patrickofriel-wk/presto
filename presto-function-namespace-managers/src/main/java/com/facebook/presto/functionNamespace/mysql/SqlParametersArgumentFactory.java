@@ -13,8 +13,8 @@
  */
 package com.facebook.presto.functionNamespace.mysql;
 
-import io.airlift.json.JsonCodec;
 import com.facebook.presto.spi.function.Parameter;
+import io.airlift.json.JsonCodec;
 import org.jdbi.v3.core.argument.AbstractArgumentFactory;
 import org.jdbi.v3.core.argument.Argument;
 import org.jdbi.v3.core.argument.ObjectArgument;
